@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { CONTENT } from '../../constants';
+import Grid from '@material-ui/core/Grid';
 import {
 	Logo,
 	Form,
@@ -10,10 +12,6 @@ import {
 	Divider,
 	Button
 } from '../../components';
-
-import { CONTENT } from '../../constants';
-
-import Grid from '@material-ui/core/Grid';
 
 import './Core.scss';
 
@@ -46,7 +44,6 @@ const handleButtonClick = () => {
 
 const Core = () => {
 	return (
-		<React.Fragment>
 			<Grid container direction='column' alignItems='center'>
 				<figure className='core-logo'>
 					<Logo />
@@ -95,7 +92,6 @@ const Core = () => {
 					</Form>
 				</Grid>
 			</Grid>
-		</React.Fragment>
 	);
 };
 
