@@ -1,0 +1,47 @@
+@import '../../styles/palette.scss';
+
+.form {
+	&__container {
+		position: relative;
+	}
+
+	&-icon {
+		position: absolute;
+		left: 22px;
+		top: 16px;
+	}
+
+	&__field {
+		padding: 15px 25px 15px 60px;
+		border-radius: 25px;
+		border-color: $secondary_0_1;
+		outline: none;
+		width: 100%;
+
+		&-label {
+			display: block;
+		}
+	}
+
+	&__textarea {
+		padding: 20px;
+		border-radius: 7px;
+		border-color: $secondary_0_1;
+		outline: none;
+		width: 100%;
+		min-height: 150px;
+	}
+
+	&__radio {
+		&-container {
+			display: flex;
+			align-items: center;
+		}
+
+		&-button {
+			margin-right: 10px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
